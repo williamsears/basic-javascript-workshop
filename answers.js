@@ -92,3 +92,25 @@ function reverseString(inputstring) {
 
 //Execution of reverse function
 console.log(reverseString("William"));
+
+//Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
+function factorial(number) {
+    if (number < 0) {
+        return "error";
+    }
+         else if (number == 0) {
+        return 1;
+    } else {
+    var lowered = number;
+    while (number-- > 1) {
+        lowered *= number;
+    }
+    return lowered;
+    }
+}
+
+//Execute factorial function 
+console.log(factorial(8))
+console.log(factorial(10))
+console.log(factorial(-3))
+console.log(factorial(0))
