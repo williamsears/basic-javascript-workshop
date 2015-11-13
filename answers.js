@@ -1,6 +1,6 @@
 //This is a one line comment in a javascript file.
-
 //The following function takes the first character from the provided string and displays it in the console log
+/*
 function characterSelector(string) {
     return console.log(string.charAt(0));
 }
@@ -9,10 +9,10 @@ characterSelector("DecodeMTL");
 
 // Write a function that takes a string and returns the last character of a string. Test your function on a few inputs, including the empty string.
 function lastCharacterSelector(input) {
-    return console.log(input.charAt(input.length - 1))
+    return console.log(input.charAt(input.length - 1));
 }
 // Initialize the function "lastCharacterSelector"
-lastCharacterSelector("DecodeMTL")
+lastCharacterSelector("DecodeMTL");
 
 //Write a function that takes a string and a number, and returns the character at the position represented by the number. The indexing of number should start at 0. Test your function on a few inputs, including the empty string.
 function numberedString(inputstring, inputnumber) {
@@ -38,7 +38,7 @@ numSum(10, "word");
 
 function multiply(firstvalue, secondvalue) {
     var multiresult = firstvalue * secondvalue;
-    return console.log(multiresult)
+    return console.log(multiresult);
 }
 
 //Executes the multiply function
@@ -110,7 +110,18 @@ function factorial(number) {
 }
 
 //Execute factorial function 
-console.log(factorial(8))
-console.log(factorial(10))
-console.log(factorial(-3))
-console.log(factorial(0))
+console.log(factorial(8));
+console.log(factorial(10));
+console.log(factorial(-3));
+console.log(factorial(0));
+*/
+//Write a function that takes a phrase, and returns the same phrase with every word capitalized. For example, if you pass your function "hello world", it should return "Hello World" and if you pass it "HELLO WORLD" or even "HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+// this was very very confusing. Finally i looked it up on google and found the above solution, I read about all the arguments and parameters such as /w /s to understand what exactly i am running.
+console.log(toTitleCase("hello my name is william"));
+console.log(toTitleCase("Welcome to DECodEmTl"));
+
+
