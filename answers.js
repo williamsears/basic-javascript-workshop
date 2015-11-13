@@ -73,15 +73,22 @@ doMath(10, 10, "multiply");
 doMath(10, 10, "subtract");
 
 //Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
-function stringRepeater(inputstring, times) {
-    var loops = 0;
-        while (loops < times) {
-            loops++;
-            console.log(inputstring);
-        }
-    };
+function stringRepeater(inputString, times) {
+   var array = [];
+   for(var i=0;i < times; i++){
+       array.push(inputString);
+   }
+   return array;
+}
 
 //Executes function stringRepeater
-stringRepeater("DecodeMTL", 5)
-stringRepeater("Javascript pro", 50);
+console.log(stringRepeater("DecodeMTL", 5));
 
+//Write a function that takes a string, and returns the reverse of that string. For example, if you pass the function the string “hello”, it should return “olleh”. Test your function on a few inputs, including the empty string
+
+function reverseString(inputstring) {
+    return inputstring.split('').reverse().join('');
+}
+
+//Execution of reverse function
+console.log(reverseString("William"));
