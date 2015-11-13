@@ -25,7 +25,7 @@ numberedString("", 1);
 //Write a function that takes two numbers and adds them together. Test your function on a few inputs. Write in the comments what happens when you pass something other than a number to your function.
 function numSum(valueone, valuetwo) {
     var result = valueone + valuetwo;
-  return console.log(result);
+    return console.log(result);
 }
 
 //Executes the function NumSum which allows you to add two numbers together.
@@ -51,12 +51,15 @@ multiply(10, "string");
 //Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product. If the string is ‘div’, return the ratio. Otherwise return 0.
 function doMath(firstvalue, secondvalue, operation) {
     if (operation == "add") {
-    var result = firstvalue + secondvalue;
-    } else if (operation == "multiply") {
+        var result = firstvalue + secondvalue;
+    }
+    else if (operation == "multiply") {
         var result = firstvalue * secondvalue;
-    } else if (operation == "subtract") {
+    }
+    else if (operation == "subtract") {
         var result = firstvalue - secondvalue;
-    } else if (operation == "divide") {
+    }
+    else if (operation == "divide") {
         var result = firstvalue / secondvalue;
     }
     console.log("The answer is " + result)
@@ -68,5 +71,17 @@ doMath(10, 10, "add");
 doMath(10, 10, "divide");
 doMath(10, 10, "multiply");
 doMath(10, 10, "subtract");
-    
-    
+
+//Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
+function stringRepeater(inputstring, times) {
+    var loops = 0;
+        while (loops < times) {
+            loops++;
+            console.log(inputstring);
+        }
+    };
+
+//Executes function stringRepeater
+stringRepeater("DecodeMTL", 5)
+stringRepeater("Javascript pro", 50);
+
