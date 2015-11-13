@@ -29,7 +29,21 @@ function numSum(valueone, valuetwo) {
 }
 
 //Executes the function NumSum which allows you to add two numbers together.
-numSum(10, 10)
-numSum(10, word)
+numSum(10, 10);
+numSum(10, "word");
 
-// When i add a word to my numSum function i get ReferenceError: word is not defined
+// When i add word to my numSum function i get "10word" as an answer.
+
+//Write a function that takes two numbers and multiplies them together. Test your function on a few inputs. Write in your comments what happens when you pass something other than a number to your function.
+
+function multiply(firstvalue, secondvalue) {
+    var multiresult = firstvalue * secondvalue;
+    return console.log(multiresult)
+}
+
+//Executes the multiply function
+
+multiply(7, 7);
+multiply(10, "string");
+
+// When i multiply with a string i get "NaN"
