@@ -1,36 +1,36 @@
 //This is a one line comment in a javascript file.
 //The following function takes the first character from the provided string and displays it in the console log
-/*
+
 function characterSelector(string) {
-    return console.log(string.charAt(0));
+    return string.charAt(0);
 }
 //Executes the following
 characterSelector("DecodeMTL");
 
 // Write a function that takes a string and returns the last character of a string. Test your function on a few inputs, including the empty string.
 function lastCharacterSelector(input) {
-    return console.log(input.charAt(input.length - 1));
+    return input.charAt(input.length - 1);
 }
 // Initialize the function "lastCharacterSelector"
 lastCharacterSelector("DecodeMTL");
 
 //Write a function that takes a string and a number, and returns the character at the position represented by the number. The indexing of number should start at 0. Test your function on a few inputs, including the empty string.
 function numberedString(inputstring, inputnumber) {
-    return console.log(inputstring[inputnumber]);
+    return inputstring[inputnumber];
 }
 // Executes the function numberedString
-numberedString("DecodeMTL", 3);
-numberedString("", 1);
+console.log(numberedString("DecodeMTL", 3));
+console.log(numberedString("", 1));
 
 //Write a function that takes two numbers and adds them together. Test your function on a few inputs. Write in the comments what happens when you pass something other than a number to your function.
 function numSum(valueone, valuetwo) {
     var result = valueone + valuetwo;
-    return console.log(result);
+    return result;
 }
 
 //Executes the function NumSum which allows you to add two numbers together.
-numSum(10, 10);
-numSum(10, "word");
+console.log(numSum(10, 10));
+console.log(numSum(10, "word"));
 
 // When i add word to my numSum function i get "10word" as an answer.
 
@@ -38,13 +38,13 @@ numSum(10, "word");
 
 function multiply(firstvalue, secondvalue) {
     var multiresult = firstvalue * secondvalue;
-    return console.log(multiresult);
+    return multiresult;
 }
 
 //Executes the multiply function
 
-multiply(7, 7);
-multiply(10, "string");
+console.log(multiply(7, 7));
+console.log(multiply(10, "string"));
 
 // When i multiply with a string i get "NaN"
 
@@ -62,15 +62,15 @@ function doMath(firstvalue, secondvalue, operation) {
     else if (operation == "divide") {
         var result = firstvalue / secondvalue;
     }
-    console.log("The answer is " + result)
+    return "The answer is " + result;
 }
 
 // Executes the doMath function
 
-doMath(10, 10, "add");
-doMath(10, 10, "divide");
-doMath(10, 10, "multiply");
-doMath(10, 10, "subtract");
+console.log(doMath(10, 10, "add"));
+console.log(doMath(10, 10, "divide"));
+console.log(doMath(10, 10, "multiply"));
+console.log(doMath(10, 10, "subtract"));
 
 //Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
 function stringRepeater(inputString, times) {
@@ -114,7 +114,7 @@ console.log(factorial(8));
 console.log(factorial(10));
 console.log(factorial(-3));
 console.log(factorial(0));
-*/
+
 //Write a function that takes a phrase, and returns the same phrase with every word capitalized. For example, if you pass your function "hello world", it should return "Hello World" and if you pass it "HELLO WORLD" or even "HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.
 function toTitleCase(str)
 {
